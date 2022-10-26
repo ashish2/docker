@@ -1,0 +1,9 @@
+version: '2'
+services:
+ web:
+   image: ashish2/kali-last-release:v1
+   #volumes:
+   # - ./src:/app
+   command: /opt/nessus/sbin/nessus-service
+   ports:
+    - "8834:8834"
